@@ -1,0 +1,61 @@
+.advantages_cards {
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  margin-bottom: 10rem;
+}
+
+button {
+  width: auto;
+  margin: 0;
+}
+
+nav {
+  position: sticky;
+  z-index: 100;
+  top: 0;
+  padding: 1rem;
+  background-color: #1f2d38;
+  align-items: center;
+  flex-direction: column;
+}
+
+article {
+  margin-top: 0;
+}
+
+.product_text,
+.highlight,
+#team,
+.header_text {
+  margin-bottom: 10rem;
+}
+
+.team_graphics {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.team_graphics img {
+  width: 20%;
+  opacity: 60%;
+}
+
+.team_text {
+  margin-bottom: 0;
+}
+
+.footer {
+  /* margin-left: 5rem;
+  margin-right: 5rem; */
+  background-color: #1f2d38;
+}
+
+header {
+  background-image: url(https://images.unsplash.com/photo-1607499699372-7bb722dff7e2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);
+}
+
+@media (min-width: 1000px) {
+  nav {
+    flex-direction: row;
+  }
+}
