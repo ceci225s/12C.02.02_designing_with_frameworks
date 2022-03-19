@@ -4,12 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Template</title>
+    <title>Responsive</title>
     <!--Template adapted from https://www.freecodecamp.org/news/basic-html5-template-boilerplate-code-example/ -->
     <!-- Inspired by https://textluke.com/ & https://carrot.tech/ for educational purpose-->
     <!-- Lorem Ipsum from https://loremizr.monkeymatt.com/ -->
-    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&family=Roboto+Mono:wght@200;300;400&family=Rubik:wght@700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <nav>
@@ -20,7 +25,7 @@
         <li><a href="#product">Product</a></li>
         <li><a href="#team">Team</a></li>
       </ul>
-      <button type="button">Learn More &#x2794;</button>
+      <button>Learn More &#x2794;</button>
     </nav>
 
     <header>
@@ -32,16 +37,16 @@
           Non utriuque solatium amet netus nobis cum metus securus fecerunt oppressus eu
           oportunitatis error est quae interpretes corporis - v tot ullo s Verius.
         </p>
-        <button type="button">Request Demo &#x2794;</button>
+        <button>Request Demo &#x2794;</button>
       </div>
       <!-- Add image-->
       <div class="header_graphics"></div>
     </header>
-    <main class="container">
+    <main>
       <section id="advantages">
         <h2>Advantages</h2>
         <!-- Card layout -->
-        <div class="advantages_cards grid">
+        <div class="advantages_cards">
           <article class="advantages_card">
             <!-- Add image-->
             <div class="advantages_card_graphics"></div>
@@ -105,7 +110,7 @@
 
         <!-- Add image-->
         <div class="product_graphics"></div>
-        <div class="product_text grid">
+        <div class="product_text">
           <article>
             <h3>1. Nisi Unde fuga mus fuga</h3>
             <p>Risus ab ducimus quo v terrenos acerba si odit quam justo nunc ullo Modo.</p>
@@ -132,22 +137,24 @@
       </section>
       <section class="highlight">
         <!-- Big headline component -->
-        <h2>
-          Intentione fuga natus quasi et Modulumina Simulacrum memento usus instrumenta apparet nam
-          y figuraliler custodes in est malleum fuga.
-        </h2>
-        <!-- Two small cards -->
-        <div class="highlight_small_cards grid">
-          <div>
-            <h3>Landem Inncem</h3>
-            <p>46% scripta orci</p>
+        <div class="indhold">
+          <h2>
+            Intentione fuga natus quasi et Modulumina Simulacrum memento usus instrumenta apparet
+            nam y figuraliler custodes in est malleum fuga.
+          </h2>
+          <!-- Two small cards -->
+          <div class="highlight_small_cards">
+            <div class="small_card">
+              <h3>Landem Inncem</h3>
+              <p>46% scripta orci</p>
+            </div>
+            <div class="small_card">
+              <h3>Zzril Magnis</h3>
+              <p>45% dextris iure</p>
+            </div>
           </div>
-          <div>
-            <h3>Zzril Magnis</h3>
-            <p>45% dextris iure</p>
-          </div>
+          <button>Request Demo &#x2794;</button>
         </div>
-        <button type="button">Request Demo &#x2794;</button>
       </section>
       <section id="team">
         <h2>Meet the Team</h2>
@@ -163,12 +170,12 @@
           <section class="team_text">
             <h3>Cras</h3>
             <ul>
-              <li>- O’ti usus symbola temporibus</li>
-              <li>- Clectione 24/7</li>
-              <li>- Risus terrestres</li>
-              <li>- Neque quae peccat</li>
+              <li>O’ti usus symbola temporibus</li>
+              <li>Clectione 24/7</li>
+              <li>Risus terrestres</li>
+              <li>Neque quae peccat</li>
             </ul>
-            <a href="#contact">Contact Cras &#x2794;</a>
+            <button href="#contact">Contact Cras &#x2794;</button>
           </section>
         </article>
         <article>
@@ -183,12 +190,12 @@
           <section class="team_text">
             <h3>Ipsum Sapien</h3>
             <ul>
-              <li>- D’p primis te quod pede</li>
-              <li>- Eos eius regulantur wisi eum</li>
-              <li>- Eget clari criminales</li>
-              <li>- Odio timorem nascetur</li>
+              <li>D’p primis te quod pede</li>
+              <li>Eos eius regulantur wisi eum</li>
+              <li>Eget clari criminales</li>
+              <li>Odio timorem nascetur</li>
             </ul>
-            <a href="#contact">Contact Ipsum Sapien &#x2794;</a>
+            <button href="#contact">Contact Ipsum Sapien &#x2794;</button>
           </section>
         </article>
       </section>
@@ -217,12 +224,12 @@
           </div>
 
           <div class="form_group">
-            <a type="submit">Send Message</a>
+            <button type="submit">Send Message</button>
           </div>
         </form>
       </section>
     </main>
-    <footer class="footer grid">
+    <footer class="footer">
       <!-- Footer component -->
       <div>
         <h2>Logo</h2>
@@ -231,24 +238,22 @@
           <li><a>+45 23225343</a></li>
         </ul>
       </div>
-      <section class="grid">
-        <div>
-          <h3>Eos Purus</h3>
-          <ul>
-            <li><a href="">Stricte Natione</a></li>
-            <li><a href="">Pygmaeus Quasi</a></li>
-            <li><a href="">Patiens Quos Neglexi</a></li>
-          </ul>
-        </div>
-        <div>
-          <h3>Company</h3>
-          <ul>
-            <li><a href="">About Us</a></li>
-            <li><a href="">Careers</a></li>
-            <li><a href="">Contact Us</a></li>
-          </ul>
-        </div>
-      </section>
+      <div>
+        <h3>Eos Purus</h3>
+        <ul>
+          <li><a href="">Stricte Natione</a></li>
+          <li><a href="">Pygmaeus Quasi</a></li>
+          <li><a href="">Patiens Quos Neglexi</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Company</h3>
+        <ul>
+          <li><a href="">About Us</a></li>
+          <li><a href="">Careers</a></li>
+          <li><a href="">Contact Us</a></li>
+        </ul>
+      </div>
     </footer>
     <script src="script.js"></script>
   </body>
